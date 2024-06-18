@@ -66,8 +66,7 @@ export default {
                 if (res?.data?.data?.token) {
                     localStorage.setItem('token', res?.data?.data?.token)
                     this.$store.commit("NAMEUPDATE", this.ruleForm.username);
-                    //在这里成功后执行这个方法，await确保成功到菜单和路由
-                    await this.$store.dispatch('getMenuList')
+
                     // 跳转到首页
                     this.$router.replace("/home");
                 }
