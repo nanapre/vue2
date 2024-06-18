@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { doLogin } from '@/apis/user.js';
+import { doLogin, userInfo } from '@/apis/user.js';
 import { Message } from 'element-ui';
 
 export default {
@@ -66,6 +66,9 @@ export default {
                 if (res?.data?.data?.token) {
                     localStorage.setItem('token', res?.data?.data?.token)
                     this.$store.commit("NAMEUPDATE", this.ruleForm.username);
+                    let res2 = await userInfo()
+                    this.$store.commit("RoleUpdate", res2.data.data.roles[0].name);
+                    this.$store.commit("isLogin", true);
 
                     // 跳转到首页
                     this.$router.replace("/home");
