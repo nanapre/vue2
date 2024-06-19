@@ -65,8 +65,11 @@
                         <Breadcrumb />
                     </div>
                     <div class="right">
+
                         <el-dropdown @command="logout">
-                            <span class="el-dropdown-link">{{ userName }}</span>
+                            <span class="el-dropdown-link">{{ userName }}
+                                <i class="el-icon-arrow-down el-icon--right"></i>
+                            </span>
                             <el-dropdown-menu slot="dropdown">
                                 <el-dropdown-item command="logout">退出登录</el-dropdown-item>
                             </el-dropdown-menu>

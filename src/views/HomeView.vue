@@ -183,7 +183,7 @@ export default {
         },
         series: [
           {
-            data: [120, 200, 150, 80, 70, 110, 130],
+            data: [120, 200, 150, 80, 70],
             type: 'bar',
             showBackground: true,
             barWidth: 20, // 设置柱状图的宽度
@@ -234,10 +234,24 @@ export default {
         ]
       };
       this.chart5.setOption(option5)
+
+
+    },
+    resize() {
+      //resize方法改变图表尺寸
+      this.chart1.resize();
+      this.chart2.resize();
+      this.chart3.resize();
+      this.chart4.resize();
+      this.chart5.resize();
     }
   },
   mounted() {
     this.initCharts()
+    //防止resize方法的this发生改变
+    this.resizeCallback = this.resize.bind(this)
+    //为window设置监听事件，回调是绑定this的resizeCallback事件
+    window.addEventListener('resize', this.resizeCallback)
   }
 
 }
