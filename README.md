@@ -34,4 +34,18 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ![image](https://github.com/nanapre/vue2/assets/171127789/bfd3d7e5-812c-4641-8496-361998b050f1)
 
 系统管理员也可以查看用户信息，页面如下：
+![image](https://github.com/nanapre/vue2/assets/171127789/f55e344b-78c9-4077-9056-514829ec0712)
+
+系统管理员以及销售用户可以进行贷款管理和申请管理，具体页面如下：
+![image](https://github.com/nanapre/vue2/assets/171127789/2257e700-0f92-414f-9b4f-43670d77589c)
+
+![image](https://github.com/nanapre/vue2/assets/171127789/70bf101b-d1fc-4e52-b3de-73354939f639)
+
+系统管理员以及初审用户可以进行贷款审批的初审，具体页面如下：
+![image](https://github.com/nanapre/vue2/assets/171127789/7122dea3-a313-4a6c-91fb-46e95e157a4f)
+
+![image](https://github.com/nanapre/vue2/assets/171127789/2281a508-d527-4d01-8cd9-f728b12bc174)
+
+只有系统管理员可以进行贷款审批的终审、合同管理，具体页面如下：
+
 
