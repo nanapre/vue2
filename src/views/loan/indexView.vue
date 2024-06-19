@@ -346,6 +346,7 @@ export default {
                 console.log(this.form)
                 let res = await createLoan(this.form);
                 if (res.data.code !== 20000) return this.$message('创建申请失败');
+                this.reset()
             })
         },
         reset() {
