@@ -47,5 +47,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ![image](https://github.com/nanapre/vue2/assets/171127789/2281a508-d527-4d01-8cd9-f728b12bc174)
 
 只有系统管理员可以进行贷款审批的终审、合同管理，具体页面如下：
+![image](https://github.com/nanapre/vue2/assets/171127789/911ef808-c207-4d79-9192-9da39a34b840)
 
+![image](https://github.com/nanapre/vue2/assets/171127789/8fb1de73-6193-48e6-8c86-cdb91a63735e)
 
